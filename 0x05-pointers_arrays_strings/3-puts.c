@@ -1,15 +1,17 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * main - check the code
- *
+ * _puts - check the code for Holberton School students.
+ * @str: validate the character
  * Return: Always 0.
  */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i;
+
+	for (i = 0; str[i] != '\0' ; i++)
 	{
-	_putchar(*str++);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }

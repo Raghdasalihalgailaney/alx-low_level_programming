@@ -1,35 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - entry point generates a random password
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
  *
- * Return: the generated password
+ * Return: Always 0 (Success)
  */
-/*
-1. It’s generating a random number between 0 and 128.
-2. It’s printing that number as a character.
-3. It’s adding that number to a running total.
-4. It’s repeating steps 1-3 until the running total is 2645.
-5. It’s printing the difference between 2645 and the running total.
-*/
-/*
-Time Complexity: O(1)
-*/
 int main(void)
 {
-	char c;
+	int pass[100];
+	int i, sum, n;
 
-	int x;
+	sum = 0;
 
-	srand(time(0));
-	while (x <= 2645)
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
 	{
-		c = rand() % 128;
-		x += c;
-		putchar(c);
+	pass[i] = rand() % 78;
+	sum += (pass[i] + '0');
+	putchar(pass[i] + '0');
+	if ((2772 - sum) - '0' < 78)
+	{
+	n = 2772 - sum - '0';
+	sum += n;
+	putchar(n + '0');
+	break;
+	}
 	}
 
-	putchar(2772 - x);
 	return (0);
 }

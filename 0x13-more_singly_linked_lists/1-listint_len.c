@@ -2,15 +2,17 @@
 /**
  * print_listint - prints alinked listis
  * @h: pointer to first node
+ *
  * Return: size of list
  */
 size_t print_listint(const listint_t *h);
 {
-	size_t i = 0;
+	size_t num = 0;
+
 	while (h)
 	{
 	h = h->next;
-	i++;
+	num++;
 	}
-	return (i);
+	return (num);
 }

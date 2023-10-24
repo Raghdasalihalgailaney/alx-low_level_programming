@@ -1,4 +1,7 @@
 #include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
 /**
  * main - check the code*
@@ -6,7 +9,7 @@
  */
 int main(void)
 {
-	listint_t *head
+	listint_t *head;
 	listint_t *new;
 	listint_t hello = {8, NULL};
 	size_t n;

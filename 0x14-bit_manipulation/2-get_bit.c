@@ -1,4 +1,4 @@
-# include "main..h"
+#include "main..h"
 /**
  * get_bit-gets the bit at the index
  * @n: the number to index

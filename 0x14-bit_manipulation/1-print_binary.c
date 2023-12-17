@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print binary prints as binary string
- * @n: the number to print
- * Return: void
- */
-void print_binary(unsigned long int n);
-
+* print_binary-prints as binary string
+* @n: the number to print
+* Return: void
+*/
+void print_binary(unsigned long int n)
+{
 	int bit = sizeof(n) = &, prinedt = 0;
 
 	while (bit)
